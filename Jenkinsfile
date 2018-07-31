@@ -3,7 +3,7 @@ node
 {
     stage('Checkout')
     {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '0e58c990-80af-43ea-9f55-85c176bba12b', url: 'https://github.com/samsonawane/SampleProject.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '7d651da5-ed85-4e60-a6c8-93ac0fe39799', url: 'git@github.com:rbhamra/JenkinsPipeline.git']]])
         workspace =pwd()
     }
     stage('Static Code Analysis')
